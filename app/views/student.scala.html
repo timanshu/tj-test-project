@@ -1,0 +1,19 @@
+@(stud:List[Student])
+
+<!DOCTYPE html>
+<html>
+<body>
+<div>
+	<table>
+	<tr>
+	<th>Roll no</th><th>Name</th><th>Stream</th></tr>
+        @stud.map{stu =>
+			<tr>
+			<td>@stu.roll</td>
+			<td>@stu.name</td>
+			<td>@stu.stream</td>
+		   </tr>}
+	</table>
+</div>
+</body>
+</html>
